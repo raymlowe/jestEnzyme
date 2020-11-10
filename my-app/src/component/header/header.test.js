@@ -30,7 +30,7 @@ describe('Header Component Test DEMO', () => {
 describe('Header Component', () =>{
     it('should render without errors', () => {
         const component = shallow(<Header />);  //a shallow render of the header component only renders the header and nothing else
-        console.log(component.debug()); //this will output what the component is!
+        //console.log(component.debug()); //this will output what the component is!
         const wrapper = component.find(`[data-test="headerComponent"]`); //here is a change. we target a 'data-test' attribute instead of a className
         expect(wrapper.length).toBe(1); //there should be one .headerComponent
     });
